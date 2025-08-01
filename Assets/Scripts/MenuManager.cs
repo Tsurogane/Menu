@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections; 
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class MenuManager : MonoBehaviour
     public Image painelFade;
     public float duracaoFade = 1.5f;
     public GameObject sistemaDeJogo;
+
+
+    //public void Iniciar()
+    //{
+    //    SceneManager.LoadScene("mainMenu", LoadSceneMode.Single);
+
+    //}
+
     private void Start()
     {
         
@@ -60,5 +69,6 @@ public class MenuManager : MonoBehaviour
     public void Sair()
     {
         Application.Quit();
+        Debug.Log("Jogo encerrado.");
     }
 }
